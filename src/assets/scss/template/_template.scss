@@ -1,0 +1,73 @@
+@media only screen and (max-width: 576px) {
+
+  //
+
+}
+
+// Test
+
+html, body, .wrapper {
+  background: #ffffff;
+}
+
+.columns th {
+  // outline: 1px solid red;
+}
+
+
+
+
+// Prod
+
+h1, h2, h3, h4, h5, h6,
+p, span,
+a {
+  -webkit-font-smoothing: antialiased;
+}
+
+table.vertical-collapse td.columns,
+table.vertical-collapse td.column,
+table.vertical-collapse th.columns,
+table.vertical-collapse th.column {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+table.button.secondary table a {
+  color: $black;
+  background: #ffffff;
+  border: 2px solid #f4f4f4;
+}
+
+.bullet {
+  color: $medium-gray;
+}
+
+p.phone a {
+  text-decoration: none !important;
+}
+
+p.address a {
+  color: $dark-gray;
+  border-bottom: 1px solid rgba(153,153,153,.16) !important;
+  text-decoration: none !important;
+}
+
+p.website a {
+  color: $primary-color;
+  border-bottom: 1px solid rgba(17,170,153,.16) !important;
+  text-decoration: none !important;
+}
+
+// allows hide elements in wrapper
+
+table.body table.wrapper .show-for-large {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    display: none !important;
+    width: 0;
+    mso-hide: all; // hide selected elements in Outlook 2007-2013
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,61 @@
+---
+name: Мария Митина
+post: менеджер по маркетингу
+cell: (903) 149 58 59
+cell-url: 9031495859
+landline: (800) 555 33 00
+landline-url: 8005553300
+address: Москва, Складочная ул., 3 стр. 7
+website: begemot.ru
+rooturl: http://www.begemot.ru/upload/email/_signature/
+---
+
+<wrapper class="wrapper">
+	<!-- <container> -->
+	<spacer size="16"></spacer>
+	<row class="vertical-collapse collapse">
+		<columns>
+			<row>
+				<!-- <columns class="hide-for-large"><img class="image" src="{{rooturl}}assets/img/signature__assets__small.png" alt=""></columns> -->
+				
+				<columns class="show-for-large"><img class="image" src="{{rooturl}}assets/img/signature__assets__large.png" alt=""></columns>
+			</row>
+		</columns>
+	</row>
+	<spacer class="show-for-large" size="8"></spacer>
+	<row>
+		<columns>
+			<h6 class="name-post">
+				{{name}}
+				<br>
+				<small>{{post}}</small>
+			</h6>
+			<spacer size="4"></spacer>
+			<p class="phone">
+				<!-- <a href="tel:+7{{cell-url}}">7 {{cell}}</a> -->
+				<!-- <span class="bullet">&bull;</span> -->
+				<a href="tel:+7{{landline-url}}">8 {{landline}}</a>
+			</p>
+			<p class="address">
+				<a href="https://yandex.ru/maps/-/CBUlUJcvgB">{{address}}</a>
+			</p>
+			<spacer size="4"></spacer>
+			<p class="website">
+				<a href="http://{{website}}/">www.{{website}}</a>
+			</p>
+		</columns>
+
+		<!-- Кнопка "позвонить" -->
+
+	<!--
+		<row>
+			<columns class="hide-for-large">
+				<spacer size="8"></spacer>
+				<button class="secondary radius small-expanded" href="tel:+7{{cell}}">позвонить</button>
+			</columns>
+		</row>
+	-->
+
+	</row>
+<!-- </container> -->
+</wrapper>
